@@ -75,7 +75,8 @@ p {
 	color: white;
 }
 
-#home > a {
+#home > a,
+.external-links > a {
 	color: white;
 	font-size: 1.2em;
 	text-decoration: none;
@@ -84,6 +85,14 @@ p {
 	padding: 8px;
 	border-radius: 5px;
 	margin-top: 8px;
+}
+
+.external-links {
+	display: flex;
+}
+
+.external-links > a {
+	margin: 10px;
 }
 
 /* Buzz */
@@ -179,10 +188,6 @@ p {
 	}
 
 	body {
-		font-size: 0.8em;
-	}
-
-	li > a {
 		font-size: 0.8em;
 	}
 }
