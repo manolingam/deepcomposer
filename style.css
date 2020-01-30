@@ -82,6 +82,11 @@ p {
 	color: white;
 }
 
+#about > p,
+.home-container > p {
+	max-width: 50%;
+}
+
 .home-container > a,
 .external-links > a {
 	color: white;
@@ -215,5 +220,10 @@ p {
 
 	body {
 		font-size: 0.8em;
+	}
+
+	#about > p,
+	.home-container > p {
+		max-width: 70%;
 	}
 }
