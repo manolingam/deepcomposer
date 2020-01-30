@@ -82,7 +82,8 @@ section {
 	scroll-snap-align: center;
 }
 
-.home-container {
+.home-container,
+.home-content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -102,11 +103,11 @@ p {
 }
 
 #about > p,
-.home-container > p {
+.home-content > p {
 	max-width: 50%;
 }
 
-.home-container > a,
+.home-content > a,
 .external-links > a {
 	color: white;
 	font-size: 1.2em;
@@ -269,7 +270,7 @@ p {
 	}
 
 	#about > p,
-	.home-container > p {
+	.home-content > p {
 		max-width: 70%;
 	}
 }
