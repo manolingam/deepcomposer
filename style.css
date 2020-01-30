@@ -23,12 +23,12 @@ body {
 }
 
 nav {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	z-index: 1;
 	display: flex;
-	width: 100%;
 	height: 60px;
+	right: 0;
 }
 
 nav ul {
@@ -36,6 +36,21 @@ nav ul {
 	display: flex;
 	width: 100%;
 	justify-content: center;
+}
+
+#title {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-top: 15px;
+	margin-left: 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: rgb(23, 164, 219);
+}
+
+#title:hover {
+	color: white;
 }
 
 nav ul li {
@@ -46,10 +61,10 @@ nav ul li {
 nav ul li a {
 	text-decoration: none;
 	text-transform: uppercase;
-	color: #f4f4f4;
+	color: black;
 	font-weight: bold;
 	border: 1px solid black;
-	background-color: black;
+	background-color: rgb(23, 164, 219);
 	border-radius: 5px;
 	padding: 7px;
 }
@@ -162,7 +177,7 @@ p {
 .hvr-ripple-in:before {
 	content: '';
 	position: absolute;
-	border: black solid 4px;
+	border: rgb(23, 164, 219) solid 4px;
 	border-radius: 7px;
 	top: -12px;
 	right: -12px;
