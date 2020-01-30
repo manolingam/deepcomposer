@@ -136,50 +136,69 @@ p {
 	animation-iteration-count: infinite;
 }
 
-/* .ocean {
-	height: 5%;
-	width: 100%;
+.muzieknootjes {
+	display: block;
+	margin: auto;
 	position: absolute;
 	bottom: 0;
-	left: 0;
-	background: linear-gradient(to right, #03001e, #7303c0, #03001e);
+	min-width: 100%;
+	height: 100px;
+	border: 0px solid #000;
 }
 
-.wave {
-	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
-		repeat-x;
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4 {
 	position: absolute;
-	top: -70px;
-	width: 6400px;
-	height: 150px;
-	animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-	transform: translate3d(0, 0, 0);
+	animation: notes 3s infinite linear;
+	font-size: 35px;
+	opacity: 0;
 }
 
-.wave:nth-of-type(2) {
-	animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
-		swell 7s ease -1.25s infinite;
-	opacity: 1;
+.noot-1 {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	animation-delay: 0.5s;
 }
 
-@keyframes wave {
+.noot-2 {
+	top: 30px;
+	left: 30%;
+	animation-delay: 1s;
+}
+
+.noot-3 {
+	top: 90px;
+	left: 60%;
+	animation-delay: 1.5s;
+}
+
+.noot-4 {
+	top: 40px;
+	left: 90%;
+	animation-delay: 2s;
+}
+
+@keyframes notes {
 	0% {
-		margin-left: 0;
-	}
-	100% {
-		margin-left: -1600px;
-	}
-}
-
-@keyframes swell {
-	0%,
-	100% {
-		transform: translate3d(0, -25px, 0);
+		transform: scale(1) translate(0, 0);
+		opacity: 0;
 	}
 	50% {
-		transform: translate3d(0, 5px, 0);
+		opacity: 1;
+		transform: scale(1.5) translate(50%, -50%);
 	}
-} */
+	80% {
+		opacity: 0;
+		transform: scale(1.5) translate(100%, -100%);
+	}
+	100% {
+		transform: scale(1.5) translate(100%, -100%);
+		opacity: 0;
+	}
+}
 
 @media only screen and (max-width: 800px) {
 	img {
