@@ -63,6 +63,13 @@ section {
 	scroll-snap-align: center;
 }
 
+.home-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 #home,
 #about,
 #blog,
@@ -75,7 +82,7 @@ p {
 	color: white;
 }
 
-#home > a,
+.home-container > a,
 .external-links > a {
 	color: white;
 	font-size: 1.2em;
