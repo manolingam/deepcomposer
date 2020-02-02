@@ -127,6 +127,14 @@ p {
 	margin: 10px;
 }
 
+.social {
+	margin-top: 1em;
+}
+
+.social > a {
+	padding: 1em;
+}
+
 /* Grow */
 .hvr-grow {
 	display: inline-block;
@@ -260,7 +268,7 @@ p {
 }
 
 @media only screen and (max-width: 800px) {
-	img {
+	.home-container > img {
 		width: 70%;
 		margin-bottom: 15px;
 	}
@@ -271,6 +279,6 @@ p {
 
 	#about > p,
 	.home-content > p {
-		max-width: 70%;
+		max-width: 80%;
 	}
 }
